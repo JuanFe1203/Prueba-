@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Voice Employee Survey</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>EMPLOYEE SATISFACTION SURVEY</h1>
+        </header>
+        <div class="container">
+        
+        <section id="q1">
+            <h3>1. Do you find your job with Oracle interesting? </h3>
+            <label>
+                <input type="radio" value="1" name="q1" onclick="answer(1,this)"> Not Satisfied 
+            </label>
+            <label>
+                <input type="radio" value="2" name="q1" onclick="answer(1,this)"> Neutral 
+            </label>
+            <label>
+                <input type="radio" value="3" name="q1" onclick="answer(1,this)"> Satisfied 
+            </label>
+        </section>
+
+        <section id="q2">
+            <h3>2. How would you rate the office environment? </h3>
+            <label>
+                <input type="radio" value="1" name="q2" onclick="answer(2,this)"> Not Satisfied 
+            </label>
+            <label>
+                <input type="radio" value="2" name="q2" onclick="answer(2,this)"> Neutral 
+            </label>
+            <label>
+                <input type="radio" value="3" name="q2" onclick="answer(2,this)"> Satisfied 
+            </label>
+        </section>
+        <section id="q3">
+            <h3>3. Do you think there is a strong leadership at Oracle? </h3>
+            <label>
+                <input type="radio" value="1" name="q3" onclick="answer(3,this)"> Not Satisfied 
+            </label>
+            <label>
+                <input type="radio" value="2" name="q3" onclick="answer(3,this)"> Neutral 
+            </label>
+            <label>
+                <input type="radio" value="3" name="q3" onclick="answer(3,this)"> Satisfied 
+            </label>
+        </section>
+        <section id="q4">
+            <h3>4. Do you see yourself working at Oracle in a year? </h3>
+            <label>
+                <input type="radio" value="1" name="q4" onclick="answer(4,this)"> Not Satisfied 
+            </label>
+            <label>
+                <input type="radio" value="2" name="q4" onclick="answer(4,this)"> Neutral 
+            </label>
+            <label>
+                <input type="radio" value="3" name="q4" onclick="answer(4,this)"> Satisfied 
+            </label>
+        </section>
+        <section id="q5">
+            <h3>5. Does your manager keep you informed about what is happening? </h3>
+            <label>
+                <input type="radio" value="1" name="q5" onclick="answer(5,this)"> Not Satisfied 
+            </label>
+            <label>
+                <input type="radio" value="2" name="q5" onclick="answer(5,this)"> Neutral 
+            </label>
+            <label>
+                <input type="radio" value="3" name="q5" onclick="answer(5,this)"> Satisfied 
+            </label>
+        </section>
+        <section id="q6">
+            <h3>6. Are you satisified with your salary? </h3>
+            <label>
+                <input type="radio" value="1" name="q6" onclick="answer(6,this)"> Not Satisfied 
+            </label>
+            <label>
+                <input type="radio" value="2" name="q6" onclick="answer(6,this)"> Neutral 
+            </label>
+            <label>
+                <input type="radio" value="3" name="q6" onclick="answer(6,this)"> Satisfied 
+            </label>
+        </section>
+        <section id="q7">
+            <h3>7. Do my opinions count at Oracle? </h3>
+            <label>
+                <input type="radio" value="1" name="q7" onclick="answer(7,this)"> Not Satisfied 
+            </label>
+            <label>
+                <input type="radio" value="2" name="q7" onclick="answer(7,this)"> Neutral 
+            </label>
+            <label>
+                <input type="radio" value="3" name="q7" onclick="answer(7,this)"> Satisfied 
+            </label>
+        </section>
+        <section id="q8">
+            <h3>8. Do you feel as though you have a work-life balance? </h3>
+            <label>
+                <input type="radio" value="1" name="q8" onclick="answer(8,this)"> Not Satisfied 
+            </label>
+            <label>
+                <input type="radio" value="2" name="q8" onclick="answer(8,this)"> Neutral 
+            </label>
+            <label>
+                <input type="radio" value="3" name="q8" onclick="answer(8,this)"> Satisfied 
+            </label>
+        </section>
+        <section id="q9">
+            <h3>9. Do you believe there is ample opportunity for career growth within the company? </h3>
+            <label>
+                <input type="radio" value="1" name="q9" onclick="answer(9,this)"> Not Satisfied 
+            </label>
+            <label>
+                <input type="radio" value="2" name="q9" onclick="answer(9,this)"> Neutral 
+            </label>
+            <label>
+                <input type="radio" value="3" name="q9" onclick="answer(9,this)"> Satisfied 
+            </label>
+        </section>
+        <section id="q10">
+            <h3>10. Do you receive appropriate feedback when a job has been completed well? </h3>
+            <label>
+                <input type="radio" value="1" name="q10" onclick="answer(10,this)"> Not Satisfied 
+            </label>
+            <label>
+                <input type="radio" value="2" name="q10" onclick="answer(10,this)"> Neutral 
+            </label>
+            <label>
+                <input type="radio" value="3" name="q10" onclick="answer(10,this)"> Satisfied 
+            </label>
+        </section>
+        <button ondblclick='save()'>Save</button>
+
+        <h2> Your score is: <span id="result"></span></h2>
+         
+
+
+        
+        </div>
+        
+    </body>
+</html>
